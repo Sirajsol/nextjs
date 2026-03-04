@@ -54,7 +54,7 @@ const getm=async()=>{
     }
     ).then(res=>{
         if(!res.ok){
-            console.log('fuck')
+            console.log('error')
             badconnection=true
             throw Error('')
            
@@ -69,9 +69,9 @@ const getm=async()=>{
     }
     //    return res.json()
     }).catch(error=>{
-            console.log('fuck catch'+error)
+            console.log('is catch'+error)
         })
-        console.log('and result is ',events.events)
+      if(events)  console.log('and result is ',events.events)
 // if(events){}
 }
 
@@ -139,7 +139,7 @@ export default async function Home() {
 
   await getm()
   // const data=await getm()
-  const data=events.events
+  const data=events?events.events:[]
   if(!BASE_API_URL){
     return null
 }
