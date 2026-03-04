@@ -8,7 +8,8 @@ import AllCards from "../components/AllCards"
 import BadConnection from "../components/badConnection"
 import Loadd from "./lod"
 
-export const BASE_API_URL=process.env.NEXT_PUBLIC_BASE_API_URL
+// export const BASE_API_URL=process.env.NEXT_PUBLIC_BASE_API_URL
+export const BASE_API_URL="https://eventsbysiraj.vercel.app/"
 // const getm=async()=>{
     
    
