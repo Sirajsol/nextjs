@@ -310,7 +310,7 @@ search()
     </thead>
 
 
-{(wt||wait)&&(<Load)}
+{(wt||wait)&&(<Load/>)}
 {/* {invetations.length>0 && invetations.map(inv=>{
     return <tr className="flex justify-evenly w-full h-[40px] border-[1px]">
          <td td className="border-[1px]  text-right flex-1 overflow-scroll"><button onClick={()=>{setInvId(inv.id)
