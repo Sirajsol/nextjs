@@ -13,7 +13,8 @@ import EventCard from './components/eventcard/EventCard'
 import { PrismaClient } from "@prisma/client";
 import BadConnection from './components/badConnection'
 
-export const BASE_API_URL=process.env.NEXT_PUBLIC_BASE_API_URL
+// export const BASE_API_URL=process.env.NEXT_PUBLIC_BASE_API_URL
+export const BASE_API_URL="https://eventsbysiraj.vercel.app/"
 // const getm=async()=>{
 //     if(!BASE_API_URL){
 //         return null
