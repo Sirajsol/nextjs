@@ -308,9 +308,7 @@ search()
 
     <th className="border-[1px]  flex-1">المعرف</th>
     </thead>
-{/* 
-    {wt &&(<div className="flex absolute w-[500px] h-[100px] left-[500px] top-[100px] justify-center items-center 
-text-[25px] text-white bg-blue-800 shadow-black rounded-md shadow-md">الرجاء الإنتظار</div>)} */}
+
 
 {(wt||wait)&&(<Load)}
 {/* {invetations.length>0 && invetations.map(inv=>{
