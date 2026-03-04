@@ -1,0 +1,4 @@
+if you didn't return respone from inside the catch clause in the api route ,then res.ok in front end will be false
+
+BUT!!! 
+if catch return a response in the route api , then res.ok will return true even if things doesn't goes allright "while you get to the catch part!!!!

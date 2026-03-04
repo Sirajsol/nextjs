@@ -1,0 +1,178 @@
+.container{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    
+    /* background-color: transparent; */
+    opacity: 1;
+    /* opacity: 0.5; */
+  /* background-color: black; */
+    /* background-image: url('./c.jpeg'); */
+    /* background-size: 1600px 700px;
+    background-repeat: no-repeat; */
+    /* object-fit: cover; */
+ 
+   
+}
+
+
+.actContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: yellowgreen; */
+    /* align-items: flex-end; */
+    width: 80%;
+    max-width:800px;
+    /* max-width: 500px; */
+    top:-50px;
+  border-radius: 5px;
+    filter: drop-shadow(0 15px 15px black);
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    background-color: rgb(15 15 35);
+    
+}
+
+.actContainer select   {
+  display: flex;
+  flex-direction: row;
+    width: 200px;
+    /* width: 70%; */
+    font-size: 15px;
+    background-color: rgb(2, 17, 84);
+    color: white;
+    font-weight: 800;
+    border:none;
+    height: auto;
+    border-bottom: 1px wheat;
+line-height: 50px;
+height: 30px;
+border-radius: 5px;
+padding: 5px;
+align-items: flex-end;
+text-align: right;
+/* position: absolute; */
+}
+.optionn {
+    display:flex !important;
+    flex-direction: row;
+    width: 90%;
+    justify-content: flex-end;
+  
+  margin: 20px;
+    color: yellow;
+    
+    font-size: 30px;
+    background-color: brown;
+  border: 3px gold solid;
+    
+  
+    
+}
+.op{
+    display: flex;
+    width: 80%;
+    height: 20px;
+    border: 1px;
+    /* background-color: blueviolet; */
+    color: blue;
+
+}
+
+.deualElement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 10px; */
+    /* background-color: blue; */
+    /* border: 5px gold solid; */
+    width: 96%;
+    margin-left:2%;
+}
+.element{
+    width: 45%;
+    display: flex;
+    border-bottom: 1px;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    margin: 20px 15px ;
+}
+ .innput{
+    display: flex;
+    width: 80%;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    border-color:red;
+    /* border: none; */
+    border-bottom: 2px gold solid;
+    color: whitesmoke;
+    /* background-color: rgb(3, 3, 77); */
+    background: transparent;
+}
+.element .llb{
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    color: white;
+    /* text-align: right; */
+}
+.timee{
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    background-color: rgb(1, 1, 49);
+    color: whitesmoke;
+    border-radius: 5px;
+    margin-left: 5px;
+    border:1px gold solid;
+    
+}
+.element label{
+    font-size: 20px;
+    color: rgb(37, 2, 49) ;
+    letter-spacing: 1px;
+    font-weight: 600;
+   width: 40%;
+   font-size: 15px;
+    /* margin:10px; */
+    margin-left: 10px;
+}
+.fl label{
+    font-size: 20px;
+    width: 200px;
+    color: white ;
+    letter-spacing: 1px;
+    font-weight: 600;
+   
+    /* margin:10px; */
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width:800px) {
+    .deualElement{
+        display: flex;
+        flex-direction: column;
+     
+    }
+    
+    .element{
+        width: 90%;
+        display: flex;
+        
+    }
+
+}

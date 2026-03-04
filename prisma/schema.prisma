@@ -1,0 +1,129 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider        = "prisma-client-js"
+}
+
+
+model User {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  hashedPassword String?
+  createdAt DateTime @default(now())
+updatedAt DateTime @updatedAt
+role Role @default(USER)
+  
+
+}
+model mUser{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @unique
+  password String 
+  role String
+}
+model Event{
+  id String    @id @default(auto()) @map("_id") @db.ObjectId
+  title String @unique
+   placeId     String?   
+ date String
+ time String
+ arMessage String
+ enMessage String
+  description String?
+  invetations Invetation[]
+ img String
+
+  place Place? @relation(fields: [placeId], references: [name])
+
+  @@unique([placeId,date])
+}
+
+
+model Place{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  name String @unique
+  enName String @unique
+  seatPlan String
+ img String
+  event Event[]
+  chairs Chair[] 
+ 
+ 
+
+
+}
+model Invetation{
+  id String @id  @default(auto()) @map("_id") @db.ObjectId
+  eventId String 
+  title String
+  name String
+  orgnization String
+  position    String
+  email String
+  categoryId String
+  whatsapp String
+  affirm String ?
+  istate String?
+  itype String
+  chairId String?  @db.ObjectId
+
+  createdDate DateTime @default(now())
+  category personCat @relation(fields: [categoryId],references: [title])
+ chair Chair? @relation(fields: [chairId],references: [id])
+  event Event @relation(fields: [eventId],references: [title],onDelete:Cascade)
+  // @@unique([eventId,chairId])
+}
+
+model Chair{
+  id String @id  @default(auto()) @map("_id") @db.ObjectId
+  title String 
+  // customerName String?
+  busy Boolean @default(false)
+invetation Invetation[]
+ placeId String 
+ catId  String 
+  
+  category ChairCategory @relation(fields: [catId],references: [title],onDelete:Cascade)
+  
+  
+  place Place @relation(fields: [placeId],references: [name],onDelete:Cascade)
+  @@unique([title,placeId])
+ 
+}
+model ChairCategory{
+   id String @id  @default(auto()) @map("_id") @db.ObjectId
+   title String @unique
+   color String
+   textColor String? @default("#ffffff")
+   img String?
+   chairs Chair[]
+}
+model title1{
+    id String @id  @default(auto()) @map("_id") @db.ObjectId
+   title String
+    lang String
+}
+model title2{
+    id String @id  @default(auto()) @map("_id") @db.ObjectId
+   title String
+    lang String
+}
+model personCat{
+  id String @id  @default(auto()) @map("_id") @db.ObjectId
+  title String @unique
+  color String
+ invetations Invetation[]
+
+}
+
+enum Role{
+  USER
+  ADMIN
+}
