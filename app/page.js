@@ -137,9 +137,9 @@ export default async function Home() {
   //   </main>
   // )
 
-  await getm()
-  // const data=await getm()
-  const data=events?events.events:[]
+//   await getm()
+  const data=await getm()
+//   const data=events?events.events:[]
   if(!BASE_API_URL){
     return null
 }
