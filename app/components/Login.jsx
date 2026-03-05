@@ -116,6 +116,7 @@ const j=async()=>{
 
     return <div className="flex justify-center items-start
   sm:w-full h-full bg-slate-500  ">
+     {wt&&<Load/>}
         <div className="flex justify-center items-start top-[60px] left-[0px] h-screen 
      w-full  bg-black opacity-35 absolute border-[2px] "
     // onClick={()=>{setShow(false)}}
@@ -136,7 +137,7 @@ const j=async()=>{
 </div>
 {/* {wt&&<div className="flex  justify-center items-center absolute top-[150px] bg-blue-900 w-[400px] h-[80px] left-[200px] text-white
     text-[30px] px-[40px] shadow-black shadow-md rounded z-10">الرجاء الإنتظار</div>} */}
-    {wt&&<Load/>}
+    {/* {wt&&<Load/>} */}
 {badConnection&&<div className=" flex absolute h-[50px] w-[100%] left-[20%]
  justify-center  bg-blue-900 text-white text-[20px]">bad connection...</div>}
 <div className="flex justify-between my-[30px]">

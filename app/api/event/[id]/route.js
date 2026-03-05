@@ -28,7 +28,7 @@ export const PUT =async(req,{params})=>{
     console.log("inside  event put id is ",id)
     try{
         const d=await prisma.event.update({
-            // data: {title,placeId,date,description,time,enMessage,arMessage,img},
+            data: {title,placeId,date,description,time,enMessage,arMessage,img},
             where:{id:id}
         })
         console.log("vefore return ",d)

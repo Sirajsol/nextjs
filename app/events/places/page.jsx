@@ -83,8 +83,8 @@ const[badConnection,setBadConnection]=useState(false)
 
 
     const[show,setShow]=useState(false)
-    return <Container>
-
+    return <div className="flex w-screen h-screen justify-center items-center">
+{(wait ||wt)&&(<Load/>)}
 {isDeleteing&&(<div className="flex w-full h-screen absolute">
         
         <div className="flex w-full h-screen absolute bg-black opacity-30 left-0 top-[-20px]"></div>
@@ -134,7 +134,7 @@ const[badConnection,setBadConnection]=useState(false)
         {/* {wait&&(<div className="flex justify-center items-center absolute top-[150px] bg-blue-900 w-[400px] h-[80px] left-[500px] text-white
       text-[30px] px-[40px] shadow-black shadow-md rounded">الرجاء الإنتظار</div>)} */}
 
-{(wait ||wt)&&(<Load/>)}
+{/* {(wait ||wt)&&(<Load/>)} */}
 
 
         {eShow &&(<EditPlace setEShow={setEShow} place={place} setMutate={setMutate}/>)}
@@ -194,7 +194,7 @@ const[badConnection,setBadConnection]=useState(false)
 
 </table>
         </div>
-        </Container>
+        </div>
 }
  
 export default Places;

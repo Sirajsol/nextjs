@@ -40,8 +40,8 @@ const NavBar = ({children}) => {
               setWait(true)}} className="flex  h-[50px] mx-[5px]  bg-gray-900 text-white text-center justify-center hover:bg-blue-950  cursor-pointer text-[10px] sm:text-[25px] hover:border-b-[1px] border-yellow-600"><Link href="/events/titleOne">الألقاب1</Link></div>
             <div  onClick={()=>{setOnControl(false)
               setWait(true)}} className="flex  h-[50px] mx-[5px]  bg-gray-900 text-white text-center justify-center hover:bg-blue-950  cursor-pointer text-[10px] sm:text-[25px] hover:border-b-[1px] border-yellow-600"><Link href="/events/titleTwo">الألقاب2</Link></div>
-            <div  onClick={()=>{setOnControl(false)
-              setWait(true)}} className="flex  h-[50px] mx-[5px]  bg-gray-900 text-white text-center justify-center hover:bg-blue-950  cursor-pointer text-[10px] sm:text-[25px] hover:border-b-[1px] border-yellow-600"><Link href="/events/personCat">الفئات</Link></div>
+            {/* <div  onClick={()=>{setOnControl(false)
+              setWait(true)}} className="flex  h-[50px] mx-[5px]  bg-gray-900 text-white text-center justify-center hover:bg-blue-950  cursor-pointer text-[10px] sm:text-[25px] hover:border-b-[1px] border-yellow-600"><Link href="/events/personCat">الفئات</Link></div> */}
            {(user.role=='مدير')&&(<div  onClick={()=>{setOnControl(false)
           setWait(true)}} className="flex  h-[50px] mx-[5px]  bg-gray-900 text-white text-center justify-center hover:bg-blue-950  cursor-pointer text-[10px] sm:text-[25px] hover:border-b-[1px] border-yellow-600"><Link href="/add-users">إضافة مستخدمين</Link></div>)} 
 

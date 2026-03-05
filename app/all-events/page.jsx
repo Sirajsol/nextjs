@@ -85,8 +85,9 @@ const AllEvents = async() => {
 const data=await getm()
 
 
-    return<div className="min-h-[700px] w-screen">
-    
+    // return<div className="min-h-[700px] w-screen">
+    return <div className="flex w-screen h-screen justify-center items-start">
+{(!badconnection)&&(<Loadd/>)}
        <NavBar/>
         {/* <div>{BASE_API_URL}</div> */}
     {/* <div className=" flex absolute  mt-[40px] justify-center items-center flex-wrap w-[80%] mx-auto">
@@ -109,7 +110,7 @@ const data=await getm()
     </div> */}
     <div className=" flex flex-col absolute  mt-[40px] justify-center items-center flex-wrap w-screen mx-auto">
     {!badconnection&&<AllCards/>}
-    {!badconnection&&<Loadd/>}
+    {/* {!badconnection&&<Loadd/>} */}
     {badconnection&& <div className='flex text-[10px] w-[60%] left-[20%] bg-blue-900 h-[80px]
          rounded-[15px] text-center
           text-blue-300 justify-center items-center sm:text-[25px] shadow-black shadow-lg '>ممممم يبدو انا هنالك مشكلة بالاتصال</div>

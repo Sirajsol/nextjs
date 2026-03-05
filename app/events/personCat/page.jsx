@@ -65,7 +65,7 @@ if(loaded){
       text-[30px] px-[40px] shadow-black shadow-md rounded">الرجاء الإنتظار</div>)} */}
  {(wt||wait)&&(<Load/>)}
 
-  {!wt && empty && invetations.length==0 && (
+  {!wt && empty && cats.length==0 && (
     <div className="flex absolute top-[300px] justify-center items-center w-full h-[40px]
      bg-blue-950 text-yellow-500 text-[30px]">! لا توجد  فئات</div>
 )}
