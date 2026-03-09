@@ -4,7 +4,8 @@ import ShowRegister from '../../components/ShowRegister'
 import Image from 'next/image'
 import { toast } from 'react-hot-toast'
 import { error } from 'console'
-export const BASE_API_URL=process.env.NEXT_PUBLIC_BASE_API_URL
+// export const BASE_API_URL=process.env.NEXT_PUBLIC_BASE_API_URL
+export const BASE_API_URL="https://eventsbysiraj.vercel.app/"
 export async function generateMetadata({ params, searchParams }, parent) {
     // read route params
     // const eventId = params.id
