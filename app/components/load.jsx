@@ -12,7 +12,7 @@ function Load() {
   
         <div className="flex flex-col items-center gap-4 bg-blue-950 text-white px-8 py-6 rounded-xl shadow-lg">
   
-          <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+          <div className="w-10 h-10 border-4 border-white border-t-blue-600  border-r-blue-500  border-b-blue-400  border-l-blue-300 rounded-full animate-spin"></div>
   
           <div className="text-[14px] sm:text-[18px]">
             الرجاء الانتظار، جاري تحميل البيانات...
