@@ -7,12 +7,21 @@ function Load() {
     //    text-[20px] md:text-[25px] lg:text-[30px] px-[40px] shadow-black shadow-md rounded z-10" >الرجاء الإنتظار</div>)}</div>)
    
 
-      return <div className="fixed inset-0 z-50 flex justify-center items-start pt-[150px]">
-
-      <div className="absolute inset-0 bg-black/30"></div>
-        <div className="flex w-[70%] h-[100px] justify-center items-center left-[15%] top-[150px] text-[12px] sm:text-[16px]
-         bg-blue-950 text-white absolute rounded-md shadow-md shadow-white ">الرجاء الانتظار , جاري تحميل البيانات</div>
-    </div>
+    return (
+      <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-sm">
+  
+        <div className="flex flex-col items-center gap-4 bg-blue-950 text-white px-8 py-6 rounded-xl shadow-lg">
+  
+          <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+  
+          <div className="text-[14px] sm:text-[18px]">
+            الرجاء الانتظار، جاري تحميل البيانات...
+          </div>
+  
+        </div>
+  
+      </div>
+    );
 }
 
 export default Load
