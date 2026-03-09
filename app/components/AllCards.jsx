@@ -45,7 +45,7 @@ useEffect(()=>{
     
     <Container>
         
-   <div className='flex w-[90%] left-[5%] flex-wrap  justify-center ml-[10%]  h-full overflow-auto border-none outline-none bg-transparent'>
+        <div className="flex w-[90%] flex-wrap justify-center max-h-screen h-screen  mx-auto overflow-auto ">
    {/* {(wt||wait)&&(<div className="flex  justify-center items-center absolute top-[150px] bg-blue-900 w-[400px] h-[80px] left-[600px] text-white
     text-[30px] px-[40px] shadow-black shadow-md rounded z-10">الرجاء الإنتظار</div>)}  */}
     {/* {(wt||wait)&&( <Load/> )} */}

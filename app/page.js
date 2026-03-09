@@ -148,9 +148,9 @@ export default async function Home() {
     <Welcome/>
     
       {/* <Login /> */}
-  <div className=" flex justify-center items-center flex-wrap w-[80%] left-[10%] mx-auto ">
+  <div className=" flex justify-center h-[500px] items-center  flex-wrap w-[80%] left-[10%] mx-auto ">
       
-      {data?.length>0&&(
+      {/* {data?.length>0&&(
           data.map(d=>{
               return <Link href={`/all-events/${d.id}`} key={d.id}>
               <EventCard ev={d} />
@@ -158,7 +158,8 @@ export default async function Home() {
               
             
           })
-      )}
+      )} */}
+   
       
       {badconnection&&(<BadConnection/>)}
   </div>

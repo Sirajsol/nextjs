@@ -10,7 +10,8 @@ useEffect(()=>{
 
     setWait(false)
 },[])
-    return <div className={Style.mainContainer}
+     return <div className={Style.mainContainer}
+    // return <div className="flex justify-items-start h-[400px] w-[300px] border-[2px] border-black bg-blue-500"
     // onClick={()=>{setWt(true)}}
     >
        {/* {(wt||wait)&&(<div className="flex  justify-center items-center absolute top-[150px] bg-blue-900 w-[400px] h-[80px] left-[200px] text-white

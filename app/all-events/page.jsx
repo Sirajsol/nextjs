@@ -86,7 +86,7 @@ const data=await getm()
 
 
     // return<div className="min-h-[700px] w-screen">
-    return <div className="flex w-screen h-screen justify-center items-start">
+    return <div className="flex w-screen h-screen justify-center items-start overflow-hidden">
 {(!badconnection)&&(<Loadd/>)}
        <NavBar/>
         {/* <div>{BASE_API_URL}</div> */}

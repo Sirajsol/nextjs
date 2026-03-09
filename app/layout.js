@@ -21,13 +21,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       {/* <body className={inter.className}> */}
-      <body className=" w-screen h-screen flex flex-col justify-between  ">
+      <body className=" min-h-screen flex flex-col overflow-scroll">
         <AuthProvider>
          <MProvider>
          {/* <Container> */}
       <PNav />
-      
+      <main className="flex-1">
       {children}
+      </main>
 {/* <Load/> */}
       <Toaster />
         <Footer/>

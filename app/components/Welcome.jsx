@@ -45,9 +45,10 @@ const Welcome = () => {
         
 
 
-    return <div className=" flex w-screen h-full absolute z-40">
+    return <div className=" flex w-screen h-screen  z-40">
 
-        <div className='flex flex-row w-[90%] top-[15%]  flex-wrap absolute justify-center ml-[10%]  h-full overflow-auto border-none outline-none bg-transparent'>
+        <div className='flex flex-row w-[90%] top-[15%]  flex-wrap absolute justify-center ml-[10%] 
+         h-screen overflow-auto border-none outline-none '>
             {evts&&evts.length>0&&evts.map(d=>{
             return <Link href={`/all-events/${d.id}`} key={d.id}
             onClick={()=>{setWt(true)}}
@@ -61,7 +62,7 @@ const Welcome = () => {
         )
         }
         </div>
-        <div className=" flex w-screen h-screen bg-black opacity-70 "></div>
+        <div className=" flex w-screen pb-[20px] h-[800px] bg-black opacity-70 "></div>
         <div className="flex  flex-col justify-evenly absolute top-[30%] left-[30%] w-[40%]">
            <h1 className="flex h-[40px]   text-white justify-center my-[20px]">أهلا بك</h1>
             <h1 className="flex  h-[40px] text-white justify-center text-center my-[20px]"> تسرنا زيارتك, نتمنى ان تتعرف من خلالنا على الأحداث التي قد تهمك</h1>
