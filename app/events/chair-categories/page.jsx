@@ -66,12 +66,12 @@ const ChairCategories = () => {
     const[show,setShow]=useState(false)
 
     if(connectionError && auth){console.log("noooooooooooooooooo dataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
-    return<div className=" flex w-screen h-screen justify-center items-center">
+    return<div className=" flex w-screen min-h-screen justify-center items-center">
         <div className="flex justify-center items-center absolute top-[150px] bg-blue-900
          text-red-300 text-[15px] sm:text-[20px] md:text-[30px] px-[40px] shadow-black shadow-md rounded">ممم حدث خطأ ما . تأكد من جودة الاتصال بالانترنت</div>
     </div>
     }  
-    return   <div className="  h-screen w-screen">
+    return   <div className="  min-h-screen w-screen">
         <Container>
         {/* {(wait||wt)&&(<div className="flex absolute z-10">
         <div className=" flex w-screen h-screen bg-black opacity-30"></div>
@@ -80,7 +80,7 @@ const ChairCategories = () => {
     </div>)} */}
     {(wait||wt)&&(<Load/>)}
         {/* {!connectionError && auth &&( */}
-      {(  <div className=" flex flex-col  w-screen h-screen items-end relative mt-[150px]">
+      {(  <div className=" flex flex-col  w-screen min-h-screen items-end relative ">
     <label htmlFor="" className='flex mr-[50px] text-blue-800 font-[900] text-[25px]'>الفعاليات/فئات الكراسي </label>
    <div className='flex h-[30px]'></div>
    <button className='flex bg-orange-600 w-[80px] py-[5px] items-center justify-center rounded-md

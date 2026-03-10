@@ -13,6 +13,7 @@ import {toast} from 'react-hot-toast'
 import NavBar from "../components/nav/Nav";
 import Load from "../components/load";
 import { userdel } from "../actions/eventactions";
+import PNave from "../components/PNav";
 const AddUsers = () => {
 
     const[wt,setWt]=useState(false)
@@ -158,9 +159,9 @@ if(loaded){
 //  },[])
    
 
-    return <div>
-<Container>
-   
+    return <div className="flex flex-col w-screen h-screen justify-center items-start overflow-hidden">
+
+<NavBar/>
 
   {isDeleteing&&(<div className="flex w-full h-screen absolute">
         
@@ -195,8 +196,8 @@ if(loaded){
         {wt&&<Load/>}
 
    
-{!connectionError &&auth&& ( <div className=" flex flex-col h-screen w-screen mt-[150px] items-end relative">
-<div><NavBar/></div> 
+{!connectionError &&auth&& ( <div className=" flex flex-col h-screen w-screen  items-end relative">
+{/* <div><NavBar/></div>  */}
     {user && auth&&(<div  className='flex flex-col mt-[30px] w-full  '>
     <div  className='flex flex-col mt-[30px] w-full items-end pb-[10px]  border-b-[1px] border-yellow-400 '>
             <label htmlFor="" className='flex mr-[50px] text-blue-800 font-[900] text-[15px] sm:text-[25px]'>التحكم/ إضافة مستخدمين</label>
@@ -329,7 +330,7 @@ setShowDelete(true)
         )}
         {/* {loaded && !user  &&(<div>no user</div>)} */}
        </div>)}
-       </Container>
+       {/* </Container> */}
        </div>
 }
  
