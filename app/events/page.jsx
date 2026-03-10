@@ -198,7 +198,7 @@ const search=()=>{
         </div>
 
         {evtId.length>0 && eShow&&(<EditEvent id={evtId} evvt={evvt} setShow={setEShow} setMutate={setMutate}/>)}
-        <table  className=" flex flex-col w-[94%] mx-auto border-[1px] border-black mt-[30px] overflow-scroll" align="ltr">
+        <table  className=" flex flex-col w-[94%] mx-auto border-[1px] border-black mt-[30px] overflow-auto" align="ltr">
 {/* <thead className="flex  w-full h-[40px] bg-slate-500">
     
     <th className="border-[1px]  flex-1"></th>
